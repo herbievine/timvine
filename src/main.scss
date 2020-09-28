@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+$spotify: #1DB954;
+$sound-cloud: #FE5000;
+$twitter: #1DA1F2;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+a,
+p,
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+    text-decoration: none;
+    color: black;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+a, p {
+    font-size: 12px !important;
+}
+
+@keyframes initFadeLvl1 {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes initFadeLvl2 {
+    0%, 20% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes initFadeLvl3 {
+    0%, 40% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes initFadeLvl4 {
+    0%, 60% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes initFadeLvl5 {
+    0%, 80% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

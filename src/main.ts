@@ -1,10 +1,19 @@
-import { createApp } from "vue";
-import App from "./App.vue";
-import "./registerServiceWorker";
-import router from "./router";
-import store from "./store";
+import { createApp } from 'vue'
+import App from './App.vue'
+import './registerServiceWorker'
+import store from './store'
+import { router } from './router'
+import { FontAwesomeRenderer } from '@/plugins/font-awesome'
+import { initFirebase } from '@/plugins/firebase'
 
-createApp(App)
-  .use(store)
-  .use(router)
-  .mount("#app");
+const initApp = async () => {
+    await initFirebase()
+    // @ts-ignore
+    await createApp(App)
+        .component('FontAwesome', FontAwesomeRenderer)
+        .use(store)
+        .use(router)
+        .mount('#app')
+}
+
+initApp().then(() => console.log('App initialized 🚀'))
