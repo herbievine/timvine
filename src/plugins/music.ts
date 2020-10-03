@@ -2,15 +2,13 @@ import { Global } from "@/global";
 
 const music: Global.Video[] = [
     {
-        url: 'https://youtu.be/_myEZTcykqE',
-        id: '_myEZTcykqE',
+        id: '-b7PjjInW8A',
         description: {
-            name: 'video',
-            location: 'USA crap'
+            name: 'Simply Red',
+            location: 'Manchester'
         }
     },
     {
-        url: 'https://youtu.be/dQw4w9WgXcQ',
         id: 'dQw4w9WgXcQ',
         description: {
             name: 'RICK',

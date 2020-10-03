@@ -46,7 +46,7 @@ export default defineComponent({
 
     & .display {
         width: 90%;
-        margin-top: 70px;
+        margin-top: 50px;
         max-width: 600px;
 
         & p {

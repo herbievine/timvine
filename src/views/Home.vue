@@ -39,12 +39,12 @@ export default defineComponent({
                 {
                     id: 'soundcloud',
                     name: 'SOUND CLOUD',
-                    link: 'https://soundcloud.com'
+                    link: 'https://soundcloud.com/electricdiplomat'
                 },
                 {
                     id: 'twitter',
                     name: 'TWITTER',
-                    link: 'https://twitter.com'
+                    link: 'https://twitter.com/TheElectricTim'
                 }
             ]
         })
@@ -68,7 +68,7 @@ export default defineComponent({
     // Big Screen
     .home {
         width: 100%;
-        height: calc(100vh - 58px);
+        height: calc(100vh - #{$header});
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -114,7 +114,7 @@ export default defineComponent({
     // Small Screen
     .home {
         width: 100%;
-        height: calc(100vh - 58px);
+        height: calc(100vh - #{$header});
         display: flex;
         flex-direction: column;
         justify-content: flex-start;

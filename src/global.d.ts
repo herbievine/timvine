@@ -5,7 +5,6 @@ declare module Global {
     }
 
     type Video = {
-        url: string
         id: string
         description: VideoDescription
     }
